@@ -1,5 +1,5 @@
 ---
-title: Welcome to Evidence
+title: Open Data Stadt Zürich Test Dashboard
 ---
 
 <Details title='How to edit this page'>
@@ -50,10 +50,6 @@ title: Welcome to Evidence
 - Edit/add markdown files in the `pages` folder
 - Deploy your project with [Evidence Cloud](https://evidence.dev/cloud)
 
-## Get Support
-- Message us on [Slack](https://slack.evidence.dev/)
-- Read the [Docs](https://docs.evidence.dev/)
-- Open an issue on [Github](https://github.com/evidence-dev/evidence)
 
 ## Personenwagen
 
