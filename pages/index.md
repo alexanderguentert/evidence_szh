@@ -1,6 +1,9 @@
 ---
-title: Open Data Stadt Zürich Test Dashboard
+title: Open Data Stadt Zürich Dashboard
 ---
+
+Dashboard zum Herumprobieren mit Open Data der Stadt Zürich
+
 
 <Details title='How to edit this page'>
 
@@ -50,19 +53,3 @@ title: Open Data Stadt Zürich Test Dashboard
 - Edit/add markdown files in the `pages` folder
 - Deploy your project with [Evidence Cloud](https://evidence.dev/cloud)
 
-
-## Personenwagen
-
-```sql pw_neu__treibstoff
-SELECT 
-  StichtagDatJahr,FzTreibstoffAgg_noDM AS Treibstoffart ,SUM(FzAnz) AS AnzahlFahrzeuge
-FROM pw_neu 
-GROUP BY ALL;
-```
-<BarChart
-    data={pw_neu__treibstoff}
-    title="Neuzulassungen von Personenwagen nach Treibstoffart"
-    x=StichtagDatJahr
-    y=AnzahlFahrzeuge
-    series=Treibstoffart
-/>
