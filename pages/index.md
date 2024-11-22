@@ -54,3 +54,19 @@ title: Welcome to Evidence
 - Message us on [Slack](https://slack.evidence.dev/)
 - Read the [Docs](https://docs.evidence.dev/)
 - Open an issue on [Github](https://github.com/evidence-dev/evidence)
+
+## Personenwagen
+
+```sql pw_neu__treibstoff
+SELECT 
+  StichtagDatJahr,FzTreibstoffAgg_noDM AS Treibstoffart ,SUM(FzAnz) AS AnzahlFahrzeuge
+FROM pw_neu 
+GROUP BY ALL;
+```
+<BarChart
+    data={pw_neu__treibstoff}
+    title="Neuzulassungen von Personenwagen nach Treibstoffart"
+    x=StichtagDatJahr
+    y=AnzahlFahrzeuge
+    series=Treibstoffart
+/>
