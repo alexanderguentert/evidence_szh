@@ -4,6 +4,23 @@ title: Open Data Stadt Zürich Dashboard
 
 Dashboard zum Herumprobieren mit Open Data der Stadt Zürich
 
+## Dateninventar
+Verfügbare Datensets auf https://data.stadt-zuerich.ch/
+
+```sql inventar
+SELECT *
+FROM ogd_inventar;
+```
+
+<DataTable data={inventar} search=true rowShading=true sortable=true>
+  <Column id=titel />
+  <Column id=kategorie />
+  <Column id=raeumliche_beziehung />
+  <Column id=zeitraum />
+  <Column id=datentyp />
+  <Column id=aktualisierungsdatum />
+	<Column id=dataset_url contentType=link />
+</DataTable>
 
 <Details title='How to edit this page'>
 
