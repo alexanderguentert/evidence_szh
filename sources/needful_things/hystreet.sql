@@ -1,0 +1,1 @@
+SELECT * FROM read_csv('https://data.stadt-zuerich.ch/dataset/hystreet_fussgaengerfrequenzen/download/hystreet_fussgaengerfrequenzen_seit2021.csv');

@@ -1,0 +1,1 @@
+SELECT * FROM read_parquet('https://data.stadt-zuerich.ch/dataset/sid_wapo_wetterstationen/download/messwerte_tiefenbrunnen_seit2007-heute.parquet');

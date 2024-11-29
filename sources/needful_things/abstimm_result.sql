@@ -1,0 +1,1 @@
+SELECT * FROM read_parquet('https://data.stadt-zuerich.ch/dataset/politik_abstimmungen_seit1933/download/abstimmungen_seit1933.parquet');
